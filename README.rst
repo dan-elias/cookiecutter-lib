@@ -8,10 +8,11 @@ Features
 --------
 
 * Sphinx Documentation (Google docstring style)
-* Continuous integration with Travis-CI
+* Doc hosting on `readthedocs <https://readthedocs.org/>`_
+* Continuous integration with `Travis-CI <https://travis-ci.org/>`_
 * Example module and tests
-* GPL-3 license
 * scripts to initialize git, run tests, regenerate docs, open docs
+* GPL-3 license
 
 Creating a project
 ------------------
