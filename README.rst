@@ -10,8 +10,9 @@ Features
 * Sphinx Documentation (Google docstring style)
 * Doc hosting on `readthedocs <https://readthedocs.org/>`_
 * Continuous integration with `Travis-CI <https://travis-ci.org/>`_
+* Version number updating with `bumpversion <https://pypi.org/project/bumpversion>`_
 * Example module and tests
-* scripts to initialize git, run tests, regenerate docs, open docs
+* scripts to initialize repo, run tests, regenerate docs, open docs
 * GPL-3 license
 
 Creating a project
