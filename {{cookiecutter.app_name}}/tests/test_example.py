@@ -1,14 +1,14 @@
 import unittest
-from skl_tools import example
+from {{ cookiecutter.app_name }} import example
 
 class Test_str_repeat(unittest.TestCase):
     fun = staticmethod(example.str_repeat)
     def test_retval_equal(self):
-        for calc, retval in [(lambda: self.fun('a'), 'a'), 
-                             (lambda: self.fun(''), ''), 
-                             (lambda: self.fun('hi'), 'hi'), 
-                             (lambda: self.fun('abc', n=3), 'abcabcabc'), 
-                             (lambda: self.fun('abc', 0), ''), 
+        for calc, retval in [(lambda: self.fun('a'), 'a'),
+                             (lambda: self.fun(''), ''),
+                             (lambda: self.fun('hi'), 'hi'),
+                             (lambda: self.fun('abc', n=3), 'abcabcabc'),
+                             (lambda: self.fun('abc', 0), ''),
                             ]:
             self.assertEqual(calc(), retval)
     def test_TypeError(self):

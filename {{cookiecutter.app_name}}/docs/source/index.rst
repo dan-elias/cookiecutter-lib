@@ -12,6 +12,8 @@ Contents
    contributing
    example
 
+.. Insert module references above here
+
 Indices and tables
 ==================
 

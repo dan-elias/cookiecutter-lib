@@ -7,3 +7,5 @@ pypi-publisher
 sphinxcontrib-napoleon
 sphinx_rtd_theme
 bumpversion
+
+# Dependencies
