@@ -29,6 +29,8 @@ git add .
 git reset $this_script
 git commit -m 'Initialization'
 git remote add origin git@github.com:{{ cookiecutter.github_username }}/{{ cookiecutter.app_name }}.git
+./run_tests.sh
+./update_docs.sh
 
 if [ "$test_mode" != "Y" ]
 then

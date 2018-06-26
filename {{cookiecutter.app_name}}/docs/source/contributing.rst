@@ -1,14 +1,16 @@
 Contributing
 ============
 
-Enabling editing
-----------------
+Setup
+-----
 
-To enable editing, navigate to the project root folder and run:
+To install with editing enabled (ie: for development), use:
 
 .. code-block:: bash
 
-  $ pip install -e .
+    $ git clone https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.app_name }}.git
+    $ cd {{ cookiecutter.app_name }}
+    $ pip install -e .
 
 
 Documentation
@@ -49,7 +51,6 @@ To run all unit tests and doc tests, navigate to the project root folder and run
 .. code-block:: bash
 
   $ ./run_tests.sh
-
 
 
 Adding a module

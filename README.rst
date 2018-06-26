@@ -37,3 +37,13 @@ Change directory to the new project folder, then run:
 
     $ chmod +x initialize.sh
     $ ./initialize.sh
+
+Among other things, this generates initial documentation and opens it in the
+browser.  The "contributing" page outlines details about adding code, tests
+and documentation to the project.  Briefly, other useful scripts are: 
+
+* new_module.sh - Create module, unit test and documentation files for a new module
+* run_tests.sh - run unit tests and doc tests
+* update_docs.sh - regenerate the project's Documentation
+* open_docs.sh - Open the project's documentation using gnome-open
+* publish.sh - publish tagged versions to pypi
