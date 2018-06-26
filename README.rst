@@ -19,7 +19,7 @@ Features
   - regenerate docs
   - publish to pypi
 
-* GPL-3 license
+* `GPL-3 <https://www.gnu.org/licenses/gpl-3.0.en.html>`_ license
 
 Creating a project
 ------------------
