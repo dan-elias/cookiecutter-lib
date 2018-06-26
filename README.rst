@@ -12,7 +12,7 @@ Features
 * Continuous integration with `Travis-CI <https://travis-ci.org/>`_
 * Version number updating with `bumpversion <https://pypi.org/project/bumpversion>`_
 * Example module and tests
-* scripts to initialize repo, run tests, regenerate docs, open docs
+* scripts to initialize repo, run tests, regenerate docs, publish to pypi
 * GPL-3 license
 
 Creating a project

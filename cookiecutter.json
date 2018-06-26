@@ -7,5 +7,5 @@
 	"project_short_description": "A python package that can be installed with pip.",
 	"version": "0.0.1",
 	"copyright_year": "2018",
-	"pypi_index_server": "pypi",
+	"pypi_index_server": "pypi"
 }
