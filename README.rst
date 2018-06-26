@@ -7,7 +7,7 @@ Based on `cookiecutter-pipproject <https://github.com/wdm0006/cookiecutter-pippr
 Features
 --------
 
-* Sphinx Documentation (Google docstring style)
+* `Sphinx Documentation <http://www.sphinx-doc.org/en/master/>`_ (`Google <http://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html>`_ docstring style)
 * Doc hosting on `readthedocs <https://readthedocs.org/>`_
 * Continuous integration with `Travis-CI <https://travis-ci.org/>`_
 * Version number updating with `bumpversion <https://pypi.org/project/bumpversion>`_
