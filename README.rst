@@ -1,6 +1,6 @@
-=================================
-Modified CookieCutter Pip-Project
-=================================
+===============================
+CookieCutter for Python library
+===============================
 
 Based on `cookiecutter-pipproject <https://github.com/wdm0006/cookiecutter-pipproject>`_
 
@@ -12,7 +12,7 @@ Features
 * Continuous integration with `Travis-CI <https://travis-ci.org/>`_
 * Version number updating with `bumpversion <https://pypi.org/project/bumpversion>`_
 * Example module and tests
-* scripts to initialize repo, run tests, regenerate docs, publish to pypi
+* bash scripts to initialize repo, run tests, regenerate docs, publish to pypi
 * GPL-3 license
 
 Creating a project
