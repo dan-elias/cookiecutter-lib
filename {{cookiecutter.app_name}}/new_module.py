@@ -115,6 +115,6 @@ def make_new_module(module_name):
 if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser(description='Add a new empty module and assoicated files')
-    parser.add_argument('module', help='Name of new module')
+    parser.add_argument('module', help='Name of new module (can include package path.  eg: my_pkg.my_module)')
     args = parser.parse_args()
     make_new_module(args.module)

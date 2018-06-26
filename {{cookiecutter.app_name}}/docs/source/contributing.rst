@@ -34,7 +34,8 @@ Documentation is also hosted online at: `Read the Docs <https://{{ cookiecutter.
 Tests
 -----
 Unit tests should be in the :mod:`unittest` style and placed in the
-../tests folder.  Each module should have a corresponding test script named
+../tests folder (or subfolders corresponding to the package hierarchy).
+Each module should have a corresponding test script named
 test_<module name>.py
 
 Where possible, docstrings should include :mod:`doctest` examples.
@@ -48,3 +49,17 @@ To run all unit tests and doc tests, navigate to the project root folder and run
 .. code-block:: bash
 
   $ ./run_tests.sh
+
+
+
+Adding a module
+---------------
+
+The easiest way to add a module is to use the "new_module.sh" script.  This:
+
+* Adds template files for:
+
+  - the module (under /{{ cookiecutter.app_name }})
+  - a unit test script (under /tests)
+
+* Adds an entry for the module in /docs/source/index.rst
