@@ -55,7 +55,7 @@ Contributing
 ------------
 
 * Issue Tracker: https://github.com/dan-elias/cookiecutter-pylib/issues
-* Source Code: github.com/dan-elias/cookiecutter-pylib.git
+* Source Code: https://github.com/dan-elias/cookiecutter-pylib.git
 
 License
 -------
