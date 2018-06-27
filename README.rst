@@ -37,6 +37,8 @@ scripts are:
 Features
 --------
 
+New projects are set up with:
+
 * `Sphinx Documentation <http://www.sphinx-doc.org/en/master/>`_ (`Google <http://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html>`_ docstring style)
 * Doc hosting on `readthedocs <https://readthedocs.org/>`_
 * Continuous integration with `Travis-CI <https://travis-ci.org/>`_
