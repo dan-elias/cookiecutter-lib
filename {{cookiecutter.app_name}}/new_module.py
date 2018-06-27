@@ -56,7 +56,8 @@ from {module_location} import {module_short_name}
 
 # From test_example.py:
 #class Test_str_repeat(unittest.TestCase):
-#    fun = staticmethod(example.str_repeat)
+#    def setUp(self):
+#        self.fun = example.str_repeat
 #    def test_retval_equal(self):
 #        for calc, retval in [(lambda: self.fun('a'), 'a'),
 #                             (lambda: self.fun('abc', 0), ''),

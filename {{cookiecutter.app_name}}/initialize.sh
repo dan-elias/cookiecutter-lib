@@ -51,5 +51,6 @@ then
   rm $this_script
   rm $build_requirements
   echo "Manual steps:"
-  echo "  * Go to https://readthedocs.org/dashboard/ and import "
+  echo "  * Go to https://readthedocs.org/dashboard/ and import {{ cookiecutter.app_name }}"
+  echo "  * Go to https://travis-ci.org/profile/{{ cookiecutter.github_username }}, Sync the account and enable tests for {{ cookiecutter.app_name }}"
 fi
