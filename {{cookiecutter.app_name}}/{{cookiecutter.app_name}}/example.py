@@ -6,6 +6,10 @@ Example module
 This module is not part of the project.  It is here to serve as a style
 example and the subject of example unit tests.
 
+.. tip::
+    To remove this module, its unit tests and documentation from the project,
+    use the "clear_examples.sh" script in the project's root folder
+
 Docstrings are based on `this example <http://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html>`_
 
 Unit tests for this module are in: ../tests/test_example.py

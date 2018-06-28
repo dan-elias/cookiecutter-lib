@@ -6,13 +6,11 @@
 Contents
 ========
 .. toctree::
+   :glob:
    :maxdepth: 2
 
-   installation
-   contributing
-   example
-
-.. Insert module references above here
+   introduction
+   code_pages/*
 
 Indices and tables
 ==================

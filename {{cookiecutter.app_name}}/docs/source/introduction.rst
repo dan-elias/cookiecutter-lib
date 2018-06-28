@@ -1,9 +1,51 @@
-Contributing
+Introduction
 ============
 
-Setup
------
+preamble TBC
 
+Example
+-------
+
+TBC
+
+Getting started
+---------------
+
+Method 1: pip
+^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+    $ pip install {{ cookiecutter.app_name }}
+
+Method 2: Clone the `github repo <https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.app_name }}>`_
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+    $ git clone https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.app_name }}.git
+
+To install with editing enabled (ie: for development), use:
+
+.. code-block:: bash
+
+    $ cd {{ cookiecutter.app_name }}
+    $ pip install -e .
+
+Otherwise, omit the "-e" option:
+
+.. code-block:: bash
+
+    $ cd {{ cookiecutter.app_name }}
+    $ pip install .
+
+
+
+Contributing
+------------
+
+Setup
+^^^^^
 To install with editing enabled (ie: for development), use:
 
 .. code-block:: bash
@@ -14,7 +56,7 @@ To install with editing enabled (ie: for development), use:
 
 
 Documentation
--------------
+^^^^^^^^^^^^^
 This project uses `Sphinx <http://www.sphinx-doc.org/en/master/>`_
 documentation with the `Google docstring style <http://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html>`_.
 
@@ -34,7 +76,7 @@ Documentation is also hosted online at: `Read the Docs <https://{{ cookiecutter.
 
 
 Tests
------
+^^^^^
 Unit tests should be in the :mod:`unittest` style and placed in the
 ../tests folder (or subfolders corresponding to the package hierarchy).
 Each module should have a corresponding test script named
@@ -54,8 +96,7 @@ To run all unit tests and doc tests, navigate to the project root folder and run
 
 
 Adding a module
----------------
-
+^^^^^^^^^^^^^^^
 The easiest way to add a module is to use the "new_module.sh" script.  This:
 
 * Adds template files for:

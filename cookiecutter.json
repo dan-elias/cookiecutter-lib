@@ -2,9 +2,9 @@
 	"full_name": "Dan Elias",
 	"email": "daniel@elias-family.com",
 	"github_username": "dan-elias",
-	"project_name": "My Pip Installable Python Package",
-	"app_name": "mypippkg",
-	"project_short_description": "A python package that can be installed with pip.",
+	"project_name": "Test project",
+	"app_name": "xx_test_prj",
+	"project_short_description": "A project generated to test the cookiecutter",
 	"version": "0.0.1",
 	"copyright_year": "2018",
 	"pypi_index_server": "pypi"
