@@ -33,12 +33,6 @@ Getting started
 
     $ pip install {{ cookiecutter.app_name }}
 
-Contributing
-------------
-
-* Issue Tracker: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.app_name }}/issues
-* Source Code: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.app_name }}.git
-
 Documentation
 -------------
 
@@ -47,6 +41,12 @@ Documentation
     :alt: Documentation status unknown
 
 https://{{ cookiecutter.app_name }}.readthedocs.io/en/latest/
+
+Contributing
+------------
+
+* Issue Tracker: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.app_name }}/issues
+* Source Code: https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.app_name }}.git
 
 Continuous integration
 -----------------------
