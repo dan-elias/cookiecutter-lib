@@ -9,6 +9,7 @@ with paths['project_root'].joinpath('cookiecutter.json').open('r') as in_stream:
     cookiecutter_args = json.load(in_stream)
 paths['build'] = paths['project_root']/cookiecutter_args['app_name']
 paths['build_code'] = paths['build']/cookiecutter_args['app_name']
+paths['build_coverage_html'] = paths['build']/'htmlcov'
 
 class Test_build(unittest.TestCase):
     @classmethod
@@ -59,6 +60,15 @@ class Test_build_no_delete(Test_build):
         self.assertEqual(get_build_version(), '0.1.0')
         self.shell_cmd('./bump_version.sh major')
         self.assertEqual(get_build_version(), '1.0.0')
+    def test_coverage(self):
+        file_names = ['_'.join(p.relative_to(paths['build_code'].parent).parts).replace('.', '_') + '.html' 
+                      for p in paths['build_code'].glob('./**/*.py')]
+        file_names.append('index.html')
+        for file_name in file_names:
+            self.assertFalse(paths['build_coverage_html'].joinpath(file_name).exists())
+        self.shell_cmd('./coverage.sh')
+        for file_name in file_names:
+            self.assertTrue(paths['build_coverage_html'].joinpath(file_name).exists())
 
 class Test_build_deletions(Test_build):
     def test_clear_examples(self):
