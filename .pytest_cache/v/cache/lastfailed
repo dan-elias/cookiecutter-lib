@@ -1,0 +1,3 @@
+{
+  "{{cookiecutter.app_name}}/tests/test_example.py": true
+}

@@ -1,0 +1,4 @@
+[
+  "tests/test_make.py::Test_make::test_new_module",
+  "tests/test_make.py::Test_make::test_update_docs"
+]
