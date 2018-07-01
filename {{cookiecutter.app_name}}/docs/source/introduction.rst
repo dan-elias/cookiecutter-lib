@@ -8,11 +8,8 @@ Example
 
 TBC
 
-Getting started
----------------
-
-Method 1: pip
-^^^^^^^^^^^^^
+Installation
+------------
 
 .. code-block:: bash
 
@@ -24,21 +21,8 @@ Method 2: Clone the `github repo <https://github.com/{{ cookiecutter.github_user
 .. code-block:: bash
 
     $ git clone https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.app_name }}.git
-
-To install with editing enabled (ie: for development), use:
-
-.. code-block:: bash
-
-    $ cd {{ cookiecutter.app_name }}
-    $ pip install -e .
-
-Otherwise, omit the "-e" option:
-
-.. code-block:: bash
-
     $ cd {{ cookiecutter.app_name }}
     $ pip install .
-
 
 
 Contributing
@@ -52,6 +36,8 @@ To install with editing enabled (ie: for development), use:
 
     $ git clone https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.app_name }}.git
     $ cd {{ cookiecutter.app_name }}
+    $ pip install -r requirements_build.txt
+    $ pip install -r requirements_doc.txt
     $ pip install -e .
 
 
