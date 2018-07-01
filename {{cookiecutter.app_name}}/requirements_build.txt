@@ -9,4 +9,5 @@ nose
 coverage
 pypi-publisher
 bumpversion
+pytest
 twine

@@ -39,10 +39,18 @@ git add .
 git reset $this_script
 git commit -m 'Initialization'
 git remote add origin git@github.com:{{ cookiecutter.github_username }}/{{ cookiecutter.app_name }}.git
-pip install -r $requirements_build
-pip install -r $requirements_doc
+if [ "$test_mode" != "Y" ]
+then
+  pip install -r $requirements_build
+  pip install -r $requirements_doc
+fi
 ./run_tests.sh
-./update_docs.sh
+if [ "$test_mode" = "Y" ]
+then
+  ./update_docs.sh --test
+else
+  ./update_docs.sh
+fi
 
 if [ "$test_mode" != "Y" ]
 then
