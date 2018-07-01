@@ -11,6 +11,7 @@ Contents
 
    introduction
    code_pages/*
+   contributing
 
 Indices and tables
 ==================
