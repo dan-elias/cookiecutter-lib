@@ -45,12 +45,7 @@ then
   pip install -r $requirements_doc
 fi
 ./run_tests.sh
-if [ "$test_mode" = "Y" ]
-then
-  ./update_docs.sh --test
-else
-  ./update_docs.sh
-fi
+./update_docs.sh
 
 if [ "$test_mode" != "Y" ]
 then

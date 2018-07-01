@@ -1,30 +1,6 @@
 #!/usr/bin/env bash
 set -e
 
-function show_usage {
-  echo "USAGE: $0 [options]"
-  echo "Options:"
-  echo "    -h, --help: show this message and exit"
-  echo "    -t, --test: test mode (don't install, push to github or delete this script)"
-  }
-
-for arg in "$@"
-do
-  case $arg in
-      -t|--test)
-        test_mode=Y
-      ;;
-      -h|--help)
-        show_usage
-        exit 0
-      ;;
-      *)
-        show_usage
-        exit 1
-      ;;
-  esac
-done
-
 # build docs
 cd docs
 make clean
@@ -45,8 +21,4 @@ do
   cat $src_file >> $requirements_rtd
 done
 
-if [ "$test_mode" != "Y" ]
-then
-  # Open docs in browser
-  ./open_docs.sh
-fi
+echo Docs available at: file://`pwd`/docs/build/html/index.html
