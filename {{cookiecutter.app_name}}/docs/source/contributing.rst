@@ -9,9 +9,9 @@ To install with editing enabled (ie: for development), use:
 
     $ git clone https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.app_name }}.git
     $ cd {{ cookiecutter.app_name }}
-    $ pip install -e .
     $ pip install -r requirements_build.txt
     $ pip install -r requirements_doc.txt
+    $ pip install -e .
 
 
 Documentation

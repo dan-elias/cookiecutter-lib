@@ -34,11 +34,6 @@ do
   chmod +x $script_name
 done
 
-git init
-git add .
-git reset $this_script
-git commit -m 'Initialization'
-git remote add origin git@github.com:{{ cookiecutter.github_username }}/{{ cookiecutter.app_name }}.git
 if [ "$test_mode" != "Y" ]
 then
   pip install -r $requirements_build
@@ -47,9 +42,15 @@ fi
 ./run_tests.sh
 ./update_docs.sh
 
+git init
+git add .
+git reset $this_script
+git commit -m 'Initialization'
+git remote add origin git@github.com:{{ cookiecutter.github_username }}/{{ cookiecutter.app_name }}.git
+
 if [ "$test_mode" != "Y" ]
 then
-  read -n1 -r -p "Manual step: Go to github and create {{ cookiecutter.app_name }} repo, then press any key to continue ..." key
+  read -n1 -r -p "Manual step: Go to https://github.com/{{ cookiecutter.github_username }}?tab=repositories and create {{ cookiecutter.app_name }} repo, then press any key to continue ..." key
   git push -u origin master
   pip install -e .
   rm $this_script

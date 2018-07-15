@@ -3,14 +3,23 @@
 
 {{ cookiecutter.project_short_description }}
 
-Contents
-========
 .. toctree::
-   :glob:
+   :caption: Introduction
    :maxdepth: 2
 
    introduction
+
+.. toctree::
+   :caption: Modules
+   :glob:
+   :maxdepth: 2
+
    code_pages/*
+
+.. toctree::
+   :caption: Contributing
+   :maxdepth: 2
+
    contributing
 
 Indices and tables
